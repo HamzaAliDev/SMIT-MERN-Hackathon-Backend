@@ -19,6 +19,7 @@ env.config();
 db_connection();
 
 // routes
+app.get("/", "Server is Running")
 app.use('/users',userRouter);
 app.use('/events',eventRouter);
 
